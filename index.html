@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classmateshop.com</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="navbar">
+            <img src="images/Home1.jpg" alt="" id="logo">
+            <ul class="navitems">
+                <li><a href="#">Track Your Order</a></li>
+                <li id="designnote"><a href="#">Design Your Notebook</a></li>
+                <li><a href="#">Login/SignUp</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="imags">
+        <div class="slide"><a href="#"><img class="sliderImage" src="images/img1.jpg" alt=""></a></div>
+    </div>
+
+    <div class="middlecontent">
+        <div class="title1">
+            <h2>Relive Your Special Moments</h2>
+        </div>
+        <div class="title2">
+            <h1>With Personalized Notebooks</h1>
+        </div>
+        <div class="designblock">
+            <img src="images/classmateshop.com_files/dsmake_it_yourself.png" alt="">
+            <p>
+                Hold on to all your picture-perfect moments with our customized notebooks in just 4 simple steps.
+            </p>
+            <ul>
+                <li>
+                    <div class="srno">1</div> Select notebook specs
+                </li>
+                <li>
+                    <div class="srno">2</div> Upload the images for notebook covers
+                </li>
+                <li>
+                    <div class="srno">3</div> You can add a video to your notebook if you wish to
+                </li>
+                <li>
+                    <div class="srno">4</div> Pay for your order and upload the video from your profile section
+                </li>
+            </ul>
+            <input type="submit" value="Design Now" class="designbutton">
+        </div>
+    </div>
+
+    <div class="videoblock">
+        <div class="vdo">
+            <video src="images/classmateshop.com_files/how-to-use-ar.mp4" width="400px" height="700px" loop autoplay
+                muted></video>
+        </div>
+        <div>
+            <p id="tlt1">
+                Capture Your Stories With
+            </p>
+            <p id="tlt2">
+                Personalised Video Notebooks
+            </p>
+        </div>
+    </div>
+
+    <div class="coverblock">
+        <p class="covertitle1">
+            Choose From Our
+        </p>
+        <p class="covertitle2">
+            Exciting Cover Designs
+        </p>
+        <div class="coverdesign">
+            <div class="smallCover">
+                <p >Christmas</p>
+                <img src="images/cover1.jpg" alt="">
+            </div>
+            <div>
+                <p>Spider-Man-No Way Home</p>
+                <img class="mainCover" src="images/cover2.jpg" alt="">
+            </div>
+            <div class="smallCover">
+                <p>Professionals</p>
+                <img src="images/cover3.jpg" alt="">
+            </div>
+            
+        </div>
+
+        <div class="exploreBtns">
+            <button class="circleBtn btns"><i class="fas fa-arrow-left"></i></button>
+            <button class="explorebutton">Explore</button>
+            <button class="circleBtn btns"><i class="fas fa-arrow-right"></i></button>
+        </div>
+
+    </div>
+
+
+
+    <div class="artitsBlock">
+        <div class="artits">
+            <img src="images/image1.jpeg" alt="">
+            <img src="images/image2.jpeg" alt="">
+            <img src="images/image3.jpeg" alt="">
+            <img src="images/image1.jpeg" alt="">
+            <img src="images/image2.jpeg" alt="">
+            <img src="images/image3.jpeg" alt="">
+        </div>
+
+        <div class="artitsText">
+            <p>Join thousands of successful artists with Classmate</p>
+
+            <input type="submit" value="Explore Now" class="designbutton">
+        </div>
+    </div>
+
+
+    <div class="creatorDesign">
+        <div class="creDesign">
+            <p class="title1">
+                Enjoy the best designs of your favourite creators
+            </p>
+            <p class="title2">
+                Join Classmate’s community of creators and earn money doing what you love
+            </p>
+            <input type="submit" value="Explore Notebooks" class="designbutton">
+        </div>
+
+        <div>
+            <img src="images/enjoy.png" alt="">
+        </div>
+    </div>
+
+
+    <div class="earnSelling">
+        <div class="earnText">
+            <p class="earntitle1">
+                Earn by selling your designs with Classmate
+            </p>
+            <p class="earntitle2">
+                Join Classmate’s community of creators and earn money doing what you love
+            </p>
+            <input type="submit" value="Sign Up Now" class="designbutton">
+        </div>
+        <div class="earnImage"><img src="images/Earn.png" alt=""></div>
+    </div>
+
+
+
+    <div class="special">
+        <div class="specialimage">
+             <img src="images/special.png" alt="">
+        </div>
+        <div class="specialText">
+            <p class="special1">
+                Classmate Specials
+            </p>
+            <p class="special2">Be part of the art that impacts lives.
+                Make an impact in the lives of differently abled people by contributing to NGOs that support their welfare.</p>
+            <input type="submit" value="Explore NoteBooks" class="specialbutton">
+        </div>
+    </div>
+
+    <script>
+        window.onload = function () {
+            const images = ['images/img1.jpg', 'images/img2.jpg', 'images/img3.jpg']; // Add paths to your images here
+            let currentIndex = 0;
+            const sliderImage = document.querySelector('.sliderImage');
+
+            function changeImage() {
+                currentIndex = (currentIndex + 1) % images.length;
+                sliderImage.src = images[currentIndex];
+            }
+
+            setInterval(changeImage, 3000); // Change image every 3 seconds
+        }
+    </script>
+
+</body>
+
+</html>
