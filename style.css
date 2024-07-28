@@ -455,3 +455,19 @@ li > .srno{
     color: rgb(49, 48, 51);
     margin-top: -10px;
 }
+
+footer{
+    background-color: #001722;
+    height: 90vh;
+    width: 209vh;
+}
+
+
+
+.copyright{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: rgb(28, 27, 31);
+    text-align: center;
+}
